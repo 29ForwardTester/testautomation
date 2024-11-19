@@ -1,11 +1,14 @@
 package executors;
 
+import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
+
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
 import constants.CurrentConstants;
 import managers.ReportManager;
+import managers.ScreenShotsManager;
 
 import org.apache.commons.io.FileUtils;
 
@@ -44,13 +47,15 @@ public class SauceDemoTest {
 	public static CurrentConstants current = new CurrentConstants("chrome");
 	public static ReportManager reporterM;
 	public ReportManager testM;
+	public static ScreenShotsManager screenshot;
+	public static ExtentTest test;
 	
 	
 	@BeforeMethod
 	public static void setUp() {
 		
 		ReportManager.reportGenerator(); //a report has been generated / initialized
-	
+		
 		
 		current.cd.manage().window().maximize();
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
@@ -88,7 +93,7 @@ public class SauceDemoTest {
 	public  void loginTest2() {
 		
 		//N,T+L, login, wrong credentials
-		ExtentTest test2 = ReportManager.testGenerator("negative login test", "User 2").info("ser credentials: default_user/secret_sauce");
+		ExtentTest test2 = ReportManager.testGenerator("negative login test", "User 2").info("user credentials: default_user/secret_sauce");
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
@@ -206,7 +211,7 @@ public class SauceDemoTest {
 	public  void loginTest6() {
 		//P, L verify sum
 		//U1 {lisa Simpson, 1289}
-		ExtentTest test6 = ReportManager.testGenerator("Sum and price changes verification test NR1", "Functional test");
+		ExtentTest test6 = ReportManager.testGenerator("Price variations and sum calculation test NR1", "Functional test");
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
@@ -311,6 +316,10 @@ public class SauceDemoTest {
 			System.out.println("prices remained unchanged");
 			test6.info("prices remained unchanged");
 			
+			current.cd.findElement(By.id("finish")).click();
+			current.cd.findElement(By.id("back-to-products"));
+			
+			
 		} catch(Exception e) {
 			test6.fail("test6 failed because : " + e.getMessage());
 		}
@@ -318,12 +327,124 @@ public class SauceDemoTest {
 	}
 	@Test
 	public  void loginTest7() {
- 		ReportManager.testGenerator("Price variation and sum calculation Test NR2", "Functional test");
+ 		ExtentTest test7 = ReportManager.testGenerator("Price variations and sum calculation test NR2", "Functional test");
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-		
-		current.cd.findElement(By.id("user-name")).sendKeys("some_user");
-		current.cd.findElement(By.id("password")).sendKeys("secret_sauce");
-		current.cd.findElement(By.id("login-button")).click();
+		try {
+			current.cd.findElement(By.id("user-name")).sendKeys("visual_user");
+			current.cd.findElement(By.id("password")).sendKeys("secret_sauce");
+			current.cd.findElement(By.id("login-button")).click();
+			
+			WebElement clicked1 = current.cd.findElement(By.id("add-to-cart-sauce-labs-backpack"));
+			WebElement cprice1 = current.cd.findElement(By.xpath("//*[@id=\"inventory_container\"]/div/div[1]/div[2]/div[2]/div"));
+			int len1 = cprice1.getText().length();
+			double d1 = Double.parseDouble(cprice1.getText().substring(1, len1));//extract the price
+			System.out.println("price of backpack: "+ d1);
+			test7.info("price of backpak: " + d1);
+			
+			WebElement clicked2 = current.cd.findElement(By.id("add-to-cart-sauce-labs-fleece-jacket"));
+			WebElement cprice2 = current.cd.findElement(By.xpath("//*[@id=\"inventory_container\"]/div/div[4]/div[2]/div[2]/div"));
+			int len2 = cprice2.getText().length();
+			double d2 = Double.parseDouble(cprice2.getText().substring(1, len2));//extract the price
+			System.out.println("price of fleece jacket: "+ d2);
+			test7.info("price of fllece jacket: " + d2);
+			
+			WebElement clicked3 = current.cd.findElement(By.id("add-to-cart-sauce-labs-onesie"));
+			WebElement cprice3 = current.cd.findElement(By.xpath("//*[@id=\"inventory_container\"]/div/div[5]/div[2]/div[2]/div"));
+			int len3 = cprice3.getText().length();
+			double d3 = Double.parseDouble(cprice3.getText().substring(1, len3));//extract the price
+			System.out.println("price of onesie: "+ d3);
+			test7.info("price of onesie: " + d3);
+			
+			clicked1.click();
+			clicked2.click();
+			clicked3.click();
+			
+			current.cd.findElement(By.xpath("//a[@data-test=\"shopping-cart-link\"]")).click();
+			
+			WebElement cprice11 = current.cd.findElement(By.xpath("//*[@id=\"cart_contents_container\"]/div/div[1]/div[3]/div[2]/div[2]/div"));
+			int len11 = cprice11.getText().length();
+			double d11 = Double.parseDouble(cprice11.getText().substring(1, len11));//extract the price from cart page
+			System.out.println("price in the cart of backpack: "+ d11);
+			test7.info("price in the cart of th backpack: " + d11);
+			
+			WebElement cprice22 = current.cd.findElement(By.xpath("//*[@id=\"cart_contents_container\"]/div/div[1]/div[4]/div[2]/div[2]/div"));
+			int len22 = cprice22.getText().length();
+			double d22 = Double.parseDouble(cprice22.getText().substring(1, len22));//extract the price from cart page
+			System.out.println("price in the cart of fleecejackt: "+ d22);
+			test7.info("price in the cart of fleecejackt: "+ d22);
+			
+			WebElement cprice33 = current.cd.findElement(By.xpath("//*[@id=\"cart_contents_container\"]/div/div[1]/div[5]/div[2]/div[2]/div"));
+			int len33 = cprice33.getText().length();
+			double d33 = Double.parseDouble(cprice33.getText().substring(1, len33));//extract the price from cart page
+			System.out.println("price in the cart of onsie: "+ d33);
+			test7.info("price in the cart of onsie: "+ d33);
+			
+			//the checkout function to be simplified!!
+			current.cd.findElement(By.id("checkout")).click();
+			current.cd.findElement(By.id("first-name")).sendKeys("Lisa");	
+			current.cd.findElement(By.id("last-name")).sendKeys("Simpson");	
+			current.cd.findElement(By.id("postal-code")).sendKeys("1289");	
+			current.cd.findElement(By.id("continue")).click();
+			
+			WebElement cprice111 = current.cd.findElement(By.xpath("//*[@id=\"checkout_summary_container\"]/div/div[1]/div[3]/div[2]/div[2]/div"));
+			int len111 = cprice111.getText().length();
+			double d111 = Double.parseDouble(cprice111.getText().substring(1, len111));//extract the price from overview page
+			System.out.println("price in overview of backpack: "+ d111);
+			test7.info("price in overview of backpack: "+ d111);
+			
+			WebElement cprice222 = current.cd.findElement(By.xpath("//*[@id=\"checkout_summary_container\"]/div/div[1]/div[4]/div[2]/div[2]/div"));
+			int len222 = cprice222.getText().length();
+			double d222 = Double.parseDouble(cprice222.getText().substring(1, len222));//extract the price from overview page
+			System.out.println("price in overview of fleece jacket: "+ d222);
+			test7.info("price in overview of fleece jacket: "+ d222);
+			
+			WebElement cprice333 = current.cd.findElement(By.xpath("//*[@id=\"checkout_summary_container\"]/div/div[1]/div[5]/div[2]/div[2]/div"));
+			int len333 = cprice333.getText().length();
+			double d333 = Double.parseDouble(cprice333.getText().substring(1, len333));//extract the price from overview page
+			System.out.println("price in overview of onesie: "+ d333);
+			test7.info("price in overview of onesie: "+ d333);
+			
+			WebElement priceTotal = current.cd.findElement(By.xpath("//*[@id=\"checkout_summary_container\"]/div/div[2]/div[6]"));
+			double dTotal = Double.parseDouble(priceTotal.getText().substring(13, (priceTotal.getText()).length()));//extract the price from overview page
+			System.out.println("total price displayed : "+ dTotal);
+			double sum = d1+d2+d3;
+			System.out.println("total price calculated :"+ sum);
+			test7.info("total price displayed : "+ dTotal);
+			test7.info("total price calculated :"+ sum);
+	
+	
+			
+			//checking changing prices
+			boolean c3 = true;
+			boolean  c2 = true;
+			boolean c1 = true;
+			boolean coherence = true;
+			if ((d1 != d11) || (d1 != d111) ) {
+				System.out.println("first price changed");
+				test7.warning("first price changed");
+				c1 = false;
+			}
+			if ((d2 != d22) && (d2 != d222)) {
+				System.out.println("second price changed");
+				test7.warning("second price changed");
+				c2 = false;
+			}
+			if ((d3 != d33) && (d3 != d333)) {
+				System.out.println("third price changed");
+				test7.warning("third price changed");
+				c3 = false;
+			}
+			if (!c1 || !c2 || !c3) 
+				coherence = false;
+			if (coherence == false)
+				test7.fail("prices changed");
+			else
+				test7.pass("passed");
+			
+		} catch(Exception e) {
+			test7.fail("test7 failed because : " + e.getMessage());
+		}
+	
 	}
 	
 //	@Test
@@ -361,12 +482,17 @@ public class SauceDemoTest {
 	@AfterMethod(alwaysRun = true)
 	public static void tearDown(ITestResult testResult) throws IOException {
 		
-		 
-		String filename = testResult.getMethod().getMethodName() + ".png";
-		String dir = System.getProperty("user.dir")	+ "//SCREENSHOTS//";
-		System.out.println(dir);
-		File sourcefile = ((TakesScreenshot)current.cd).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(sourcefile, new File(dir + filename));
+//		 
+//		String filename = testResult.getMethod().getMethodName() + ".png";
+//		String dir = System.getProperty("user.dir")	+ "//SCREENSHOTS//";
+//		System.out.println(dir);
+//		File sourcefile = ((TakesScreenshot)current.cd).getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(sourcefile, new File(dir + filename));
+		test = ReportManager.testGenerator("screenshot for: " + testResult.getMethod().getMethodName(), "screenshot taken successefully");
+		String screenpath = ScreenShotsManager.takeScreenshot(current.cd, testResult.getMethod().getMethodName());//generate a screenpath
+		test.addScreenCaptureFromPath(screenpath);
+		
+		
 		
 		ReportManager.reportFlush();
 		
