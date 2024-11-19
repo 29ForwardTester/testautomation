@@ -206,7 +206,7 @@ public class SauceDemoTest {
 	public  void loginTest6() {
 		//P, L verify sum
 		//U1 {lisa Simpson, 1289}
-		ExtentTest test6 = ReportManager.testGenerator("Sum and price changes verification test", "test goal: verify the prices dont change throughout the purchase pages, and the final sum of three items");
+		ExtentTest test6 = ReportManager.testGenerator("Sum and price changes verification test NR1", "Functional test");
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
@@ -318,7 +318,7 @@ public class SauceDemoTest {
 	}
 	@Test
 	public  void loginTest7() {
- 		ReportManager.testGenerator("testNameHeretoo", "test description here").info("more details");
+ 		ReportManager.testGenerator("Price variation and sum calculation Test NR2", "Functional test");
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		
 		current.cd.findElement(By.id("user-name")).sendKeys("some_user");
