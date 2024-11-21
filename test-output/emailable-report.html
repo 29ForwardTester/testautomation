@@ -9,16 +9,51 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8.757</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16.754</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">executors.SauceDemoTest</td><td><a href="#m0">loginTest1</a></td><td rowspan="1">1732038326346</td><td rowspan="1">504</td></tr><tr class="passedeven"><td><a href="#m1">loginTest2</a></td><td rowspan="1">1732038327710</td><td rowspan="1">280</td></tr><tr class="passedeven"><td><a href="#m2">loginTest3</a></td><td rowspan="1">1732038328236</td><td rowspan="1">267</td></tr><tr class="passedeven"><td><a href="#m3">loginTest4</a></td><td rowspan="1">1732038328800</td><td rowspan="1">777</td></tr><tr class="passedeven"><td><a href="#m4">loginTest5</a></td><td rowspan="1">1732038329850</td><td rowspan="1">1023</td></tr><tr class="passedeven"><td><a href="#m5">loginTest6</a></td><td rowspan="1">1732038331121</td><td rowspan="1">1150</td></tr><tr class="passedeven"><td><a href="#m6">loginTest7</a></td><td rowspan="1">1732038332564</td><td rowspan="1">1135</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">executors.SauceDemoTest</td><td><a href="#m0">test8</a></td><td rowspan="1">1732184986133</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="12">executors.SauceDemoTest</td><td><a href="#m1">test1</a></td><td rowspan="1">1732184970656</td><td rowspan="1">608</td></tr><tr class="passedeven"><td><a href="#m2">test2</a></td><td rowspan="1">1732184972137</td><td rowspan="1">269</td></tr><tr class="passedeven"><td><a href="#m3">test3</a></td><td rowspan="6">1732184980661</td><td rowspan="6">425</td></tr><tr class="passedeven"><td><a href="#m4">test3</a></td></tr><tr class="passedeven"><td><a href="#m5">test3</a></td></tr><tr class="passedeven"><td><a href="#m6">test3</a></td></tr><tr class="passedeven"><td><a href="#m7">test3</a></td></tr><tr class="passedeven"><td><a href="#m8">test3</a></td></tr><tr class="passedeven"><td><a href="#m9">test4</a></td><td rowspan="1">1732184981174</td><td rowspan="1">623</td></tr><tr class="passedeven"><td><a href="#m10">test5</a></td><td rowspan="1">1732184982079</td><td rowspan="1">938</td></tr><tr class="passedeven"><td><a href="#m11">test6</a></td><td rowspan="1">1732184983289</td><td rowspan="1">1139</td></tr><tr class="passedeven"><td><a href="#m12">test7</a></td><td rowspan="1">1732184984709</td><td rowspan="1">1253</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">executors.SauceDemoTest#loginTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">executors.SauceDemoTest#loginTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">executors.SauceDemoTest#loginTest3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">executors.SauceDemoTest#loginTest4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">executors.SauceDemoTest#loginTest5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">executors.SauceDemoTest#loginTest6</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">executors.SauceDemoTest#loginTest7</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">executors.SauceDemoTest#test8</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Some DataProvider public java.lang.String[][] managers.DataManager.dataProvider(java.lang.String) parameters unresolved:  at 0 type class java.lang.String
+
+	at org.testng.internal.invokers.MethodInvocationHelper.getParameters(MethodInvocationHelper.java:237)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:156)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:812)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">executors.SauceDemoTest#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">executors.SauceDemoTest#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">executors.SauceDemoTest#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>locked_out_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">executors.SauceDemoTest#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>problem_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">executors.SauceDemoTest#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sauce_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">executors.SauceDemoTest#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>performance_glitch_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">executors.SauceDemoTest#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">executors.SauceDemoTest#test3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>visual_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">executors.SauceDemoTest#test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">executors.SauceDemoTest#test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">executors.SauceDemoTest#test6</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">executors.SauceDemoTest#test7</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

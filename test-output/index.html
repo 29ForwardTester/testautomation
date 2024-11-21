@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User29F\AppData\Local\Temp\testng-eclipse-215913393\testng-customsuite.xml</span>
+                    <span>C:\Users\User29F\AppData\Local\Temp\testng-eclipse-771443139\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test8">test8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,37 +117,62 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest1">loginTest1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest2">loginTest2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest3">loginTest3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test3(locked_out_user, secret_sauce)">test3(locked_out_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest4">loginTest4</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test3(problem_user, secret_sauce)">test3(problem_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest5">loginTest5</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test3(sauce_user, secret_sauce)">test3(sauce_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest6">loginTest6</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test3(performance_glitch_user, secret_sauce)">test3(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest7">loginTest7</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test3(standard_user, secret_sauce)">test3(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test3(visual_user, secret_sauce)">test3(visual_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test6">test6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="executors.SauceDemoTest" class="method navigator-link" hash-for-method="test7">test7</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -148,6 +187,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">executors.SauceDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test8">
+                  </a> <!-- test8 -->
+                  <span class="method-name">test8</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Some DataProvider public java.lang.String[][] managers.DataManager.dataProvider(java.lang.String) parameters unresolved:  at 0 type class java.lang.String
+
+	at org.testng.internal.invokers.MethodInvocationHelper.getParameters(MethodInvocationHelper.java:237)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:156)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:812)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -156,51 +241,92 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest1">
-                  </a> <!-- loginTest1 -->
-                  <span class="method-name">loginTest1</span>
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest2">
-                  </a> <!-- loginTest2 -->
-                  <span class="method-name">loginTest2</span>
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest3">
-                  </a> <!-- loginTest3 -->
-                  <span class="method-name">loginTest3</span>
+                  <a name="test3(locked_out_user, secret_sauce)">
+                  </a> <!-- test3(locked_out_user, secret_sauce) -->
+                  <span class="method-name">test3</span>
+                  <span class="parameters">(locked_out_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest4">
-                  </a> <!-- loginTest4 -->
-                  <span class="method-name">loginTest4</span>
+                  <a name="test3(problem_user, secret_sauce)">
+                  </a> <!-- test3(problem_user, secret_sauce) -->
+                  <span class="method-name">test3</span>
+                  <span class="parameters">(problem_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest5">
-                  </a> <!-- loginTest5 -->
-                  <span class="method-name">loginTest5</span>
+                  <a name="test3(sauce_user, secret_sauce)">
+                  </a> <!-- test3(sauce_user, secret_sauce) -->
+                  <span class="method-name">test3</span>
+                  <span class="parameters">(sauce_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest6">
-                  </a> <!-- loginTest6 -->
-                  <span class="method-name">loginTest6</span>
+                  <a name="test3(performance_glitch_user, secret_sauce)">
+                  </a> <!-- test3(performance_glitch_user, secret_sauce) -->
+                  <span class="method-name">test3</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest7">
-                  </a> <!-- loginTest7 -->
-                  <span class="method-name">loginTest7</span>
+                  <a name="test3(standard_user, secret_sauce)">
+                  </a> <!-- test3(standard_user, secret_sauce) -->
+                  <span class="method-name">test3</span>
+                  <span class="parameters">(standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3(visual_user, secret_sauce)">
+                  </a> <!-- test3(visual_user, secret_sauce) -->
+                  <span class="method-name">test3</span>
+                  <span class="parameters">(visual_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test6">
+                  </a> <!-- test6 -->
+                  <span class="method-name">test6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test7">
+                  </a> <!-- test7 -->
+                  <span class="method-name">test7</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,7 +334,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User29F\AppData\Local\Temp\testng-eclipse-215913393\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User29F\AppData\Local\Temp\testng-eclipse-771443139\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -241,6 +367,46 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">GSgroup</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test6</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test8</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ISgroup</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -257,40 +423,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest6')
+data.setCell(0, 1, 'test3')
 data.setCell(0, 2, 'executors.SauceDemoTest')
-data.setCell(0, 3, 1150);
+data.setCell(0, 3, 5537);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest7')
+data.setCell(1, 1, 'test7')
 data.setCell(1, 2, 'executors.SauceDemoTest')
-data.setCell(1, 3, 1135);
+data.setCell(1, 3, 1253);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest5')
+data.setCell(2, 1, 'test6')
 data.setCell(2, 2, 'executors.SauceDemoTest')
-data.setCell(2, 3, 1023);
+data.setCell(2, 3, 1139);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTest4')
+data.setCell(3, 1, 'test5')
 data.setCell(3, 2, 'executors.SauceDemoTest')
-data.setCell(3, 3, 777);
+data.setCell(3, 3, 938);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginTest1')
+data.setCell(4, 1, 'test4')
 data.setCell(4, 2, 'executors.SauceDemoTest')
-data.setCell(4, 3, 504);
+data.setCell(4, 3, 623);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginTest2')
+data.setCell(5, 1, 'test1')
 data.setCell(5, 2, 'executors.SauceDemoTest')
-data.setCell(5, 3, 280);
+data.setCell(5, 3, 608);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginTest3')
+data.setCell(6, 1, 'test3')
 data.setCell(6, 2, 'executors.SauceDemoTest')
-data.setCell(6, 3, 267);
+data.setCell(6, 3, 588);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test3')
+data.setCell(7, 2, 'executors.SauceDemoTest')
+data.setCell(7, 3, 498);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test3')
+data.setCell(8, 2, 'executors.SauceDemoTest')
+data.setCell(8, 3, 470);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test3')
+data.setCell(9, 2, 'executors.SauceDemoTest')
+data.setCell(9, 3, 440);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test3')
+data.setCell(10, 2, 'executors.SauceDemoTest')
+data.setCell(10, 3, 425);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test2')
+data.setCell(11, 2, 'executors.SauceDemoTest')
+data.setCell(11, 3, 269);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test8')
+data.setCell(12, 2, 'executors.SauceDemoTest')
+data.setCell(12, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -322,84 +512,120 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest1</span>
-                <span class="method-start">1195 ms</span>
+                <span class="method-name">test1</span>
+                <span class="method-start">1213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest1 status=SUCCESS method=SauceDemoTest.loginTest1()[pri:0, instance:executo...)</span>
-                <span class="method-start">1707 ms</span>
+                <span class="method-name">tearDown([TestResult name=test1 status=SUCCESS method=SauceDemoTest.test1()[pri:0, instance:executors.SauceDe...)</span>
+                <span class="method-start">1833 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">2403 ms</span>
+                <span class="method-start">2523 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest2</span>
-                <span class="method-start">2559 ms</span>
+                <span class="method-name">test2</span>
+                <span class="method-start">2694 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest2 status=SUCCESS method=SauceDemoTest.loginTest2()[pri:0, instance:executo...)</span>
-                <span class="method-start">2845 ms</span>
+                <span class="method-name">tearDown([TestResult name=test2 status=SUCCESS method=SauceDemoTest.test2()[pri:0, instance:executors.SauceDe...)</span>
+                <span class="method-start">2967 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3013 ms</span>
+                <span class="method-start">3163 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest3</span>
-                <span class="method-start">3085 ms</span>
+                <span class="method-name">test3(standard_user, secret_sauce)</span>
+                <span class="method-start">3277 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3(sauce_user, secret_sauce)</span>
+                <span class="method-start">3952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3(problem_user, secret_sauce)</span>
+                <span class="method-start">4471 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4972 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3(visual_user, secret_sauce)</span>
+                <span class="method-start">5048 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3(performance_glitch_user, secret_sauce)</span>
+                <span class="method-start">5607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3(locked_out_user, secret_sauce)</span>
+                <span class="method-start">11218 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11643 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">11731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest3 status=SUCCESS method=SauceDemoTest.loginTest3()[pri:0, instance:executo...)</span>
-                <span class="method-start">3355 ms</span>
+                <span class="method-name">tearDown([TestResult name=test4 status=SUCCESS method=SauceDemoTest.test4()[pri:0, instance:executors.SauceDe...)</span>
+                <span class="method-start">12357 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3563 ms</span>
+                <span class="method-start">12563 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest4</span>
-                <span class="method-start">3649 ms</span>
+                <span class="method-name">test5</span>
+                <span class="method-start">12636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest4 status=SUCCESS method=SauceDemoTest.loginTest4()[pri:0, instance:executo...)</span>
-                <span class="method-start">4428 ms</span>
+                <span class="method-name">tearDown([TestResult name=test5 status=SUCCESS method=SauceDemoTest.test5()[pri:0, instance:executors.SauceDe...)</span>
+                <span class="method-start">13576 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4598 ms</span>
+                <span class="method-start">13762 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest5</span>
-                <span class="method-start">4699 ms</span>
+                <span class="method-name">test6</span>
+                <span class="method-start">13846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest5 status=SUCCESS method=SauceDemoTest.loginTest5()[pri:0, instance:executo...)</span>
-                <span class="method-start">5724 ms</span>
+                <span class="method-name">tearDown([TestResult name=test6 status=SUCCESS method=SauceDemoTest.test6()[pri:0, instance:executors.SauceDe...)</span>
+                <span class="method-start">14991 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5880 ms</span>
+                <span class="method-start">15159 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest6</span>
-                <span class="method-start">5970 ms</span>
+                <span class="method-name">test7</span>
+                <span class="method-start">15266 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest6 status=SUCCESS method=SauceDemoTest.loginTest6()[pri:0, instance:executo...)</span>
-                <span class="method-start">7124 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">7327 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginTest7</span>
-                <span class="method-start">7413 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest7 status=SUCCESS method=SauceDemoTest.loginTest7()[pri:0, instance:executo...)</span>
-                <span class="method-start">8550 ms</span>
+                <span class="method-name">tearDown([TestResult name=test7 status=SUCCESS method=SauceDemoTest.test7()[pri:0, instance:executors.SauceDe...)</span>
+                <span class="method-start">16519 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

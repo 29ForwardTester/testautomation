@@ -1,14 +1,14 @@
 package executors;
 
-import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
-
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
+import constants.CredentialsDataProvider;
 import constants.CurrentConstants;
 import managers.ReportManager;
 import managers.ScreenShotsManager;
+import managers.DataManager;
 
 import org.apache.commons.io.FileUtils;
 
@@ -50,12 +50,15 @@ public class SauceDemoTest {
 	public static ScreenShotsManager screenshot;
 	public static ExtentTest test;
 	
+	public DataManager dataM = new DataManager();
+	
+	
+
 	
 	@BeforeMethod
 	public static void setUp() {
 		
 		ReportManager.reportGenerator(); //a report has been generated / initialized
-		
 		
 		current.cd.manage().window().maximize();
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
@@ -63,10 +66,10 @@ public class SauceDemoTest {
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 	
 	}
-	@Test
-	public  void loginTest1() {
+	@Test(groups="GSgroup")
+	public  void test1() {
 		//P+T login
-		ExtentTest test1 = ReportManager.testGenerator("positive login test", "User1").info("User credentials: standard_user/secret_sauce");
+		ExtentTest test1 = ReportManager.testGenerator("Test1: positive login test", "User1").info("User credentials: standard_user/secret_sauce");
 		
 		try {
 			current.cd.findElement(By.id("user-name")).sendKeys("standard_user");
@@ -89,11 +92,11 @@ public class SauceDemoTest {
 		
 			
 	}
-	@Test
-	public  void loginTest2() {
+	@Test(groups="GSgroup")
+	public  void test2() {
 		
 		//N,T+L, login, wrong credentials
-		ExtentTest test2 = ReportManager.testGenerator("negative login test", "User 2").info("user credentials: default_user/secret_sauce");
+		ExtentTest test2 = ReportManager.testGenerator("Test 2: negative login test", "User 2").info("user credentials: default_user/secret_sauce");
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
@@ -107,27 +110,38 @@ public class SauceDemoTest {
 		}
 	}
 	
-	@Test
-	public  void loginTest3() {
+	@Test(dataProvider="credentials", dataProviderClass=CredentialsDataProvider.class, groups="ISgroup")
+	public  void test3(String username, String password) throws IOException{
 		
 		//N, L, login, different error message
-		ExtentTest test3 = ReportManager.testGenerator("negative login test", "User3: locked_out_user").info("more details");
+		ExtentTest test3 = ReportManager.testGenerator("Test 3: multiple users test", "difeerent login credentials");
+		
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
+			
+				
+				ExtentTest childtest3 = test3.createNode("test for: " + username);
+				current.cd.findElement(By.id("user-name")).sendKeys(username);
+				current.cd.findElement(By.id("password")).sendKeys(password);
+				current.cd.findElement(By.id("login-button")).click();
+	//			this code didnt make each login be logged and screenshot separately!!
+				String path = ScreenShotsManager.takeScreenshot(current.cd, username);//generate a screenpath
+				childtest3.addScreenCaptureFromPath(path);
 		
-			current.cd.findElement(By.id("user-name")).sendKeys("locked_out_user");
-			current.cd.findElement(By.id("password")).sendKeys("secret_sauce");
-			current.cd.findElement(By.id("login-button")).click();
+			
 		} catch(Exception e) {
 			test3.fail("test execution failed because " + e.getMessage());
 		}
+		
+		
+		
 	}
-	@Test
-	public  void loginTest4() {
+	@Test(groups="GSgroup")
+	public  void test4() {
 		
 		//P,L, verify cart contains the correct items(1) backpack
-		ExtentTest test4 = ReportManager.testGenerator("positive test", "functional test").info("test goal: verify cart conttains the one correct item: backpack");
+		ExtentTest test4 = ReportManager.testGenerator("Test 4: positive test to verify cart conttains the one correct item: backpack", "functional test").info("Credentials:standard_user/secret_sauce");
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
@@ -171,11 +185,11 @@ public class SauceDemoTest {
 		
 	}
 	
-	@Test
-	public  void loginTest5() {
+	@Test(groups="GSgroup")
+	public  void test5() {
 		//P, T, verify a purchase process till the end with 2 items
 		//U5, form data{Mike Tyson 299117}
-		ExtentTest test5 = ReportManager.testGenerator("functional test 2", "full purchase test").info("test goal: verify a succesful purchase with 2 items");
+		ExtentTest test5 = ReportManager.testGenerator("Test 5: functional test 2", "full purchase test").info("test goal: verify a succesful purchase with 2 items");
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
@@ -207,11 +221,11 @@ public class SauceDemoTest {
 		
 	}
 	
-	@Test
-	public  void loginTest6() {
+	@Test(groups="GSgroup")
+	public  void test6() {
 		//P, L verify sum
 		//U1 {lisa Simpson, 1289}
-		ExtentTest test6 = ReportManager.testGenerator("Price variations and sum calculation test NR1", "Functional test");
+		ExtentTest test6 = ReportManager.testGenerator("Test 6: Price variations and sum calculation test NR1", "Functional test");
 		
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
@@ -325,9 +339,9 @@ public class SauceDemoTest {
 		}
 		
 	}
-	@Test
-	public  void loginTest7() {
- 		ExtentTest test7 = ReportManager.testGenerator("Price variations and sum calculation test NR2", "Functional test");
+	@Test(groups="GSgroup")
+	public  void test7() {
+ 		ExtentTest test7 = ReportManager.testGenerator("Test 7: Price variations and sum calculation test NR2", "Functional test");
 		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		try {
 			current.cd.findElement(By.id("user-name")).sendKeys("visual_user");
@@ -447,18 +461,22 @@ public class SauceDemoTest {
 	
 	}
 	
-//	@Test
-//	public  void loginTest8() {
-	//ReportManager.testGenerator("testNameHeretoo", "test description here").info("more details");
-//		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-//		
-//		current.cd.findElement(By.id("user-name")).sendKeys("some_user");
-//		current.cd.findElement(By.id("password")).sendKeys("secret_sauce");
-//		current.cd.findElement(By.id("login-button")).click();
-//	}
-//	
-//	@Test
-//	public  void loginTest9() {
+	@Test(dataProvider="mydata", dataProviderClass=DataManager.class, groups="GSgroup")
+	public  void test8(String username, String pass) throws Exception {
+		
+		dataM.setDataFile();
+		dataM.dataProvider("test_data");
+		System.out.println(dataM.dataProvider("test_data"));
+		ReportManager.testGenerator("Test 8: testNameHeretoo", "test description here").info("more details");
+		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		
+		current.cd.findElement(By.id("user-name")).sendKeys(username);
+		current.cd.findElement(By.id("password")).sendKeys(pass);
+		current.cd.findElement(By.id("login-button")).click();
+	}
+	
+//	@Test(groups="GSgroup")
+//	public  void test9() {
 //		ReportManager.testGenerator("testNameHeretoo", "test description here").info("more details");
 //		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 //		
@@ -467,8 +485,8 @@ public class SauceDemoTest {
 //		current.cd.findElement(By.id("login-button")).click();
 //	}
 //	
-//	@Test
-//	public  void loginTest10() {
+//	@Test(groups="GSgroup")
+//	public  void test10() {
 //		ReportManager.testGenerator("testNameHeretoo", "test decription here").info("more details");
 //		current.cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 //		
@@ -479,7 +497,7 @@ public class SauceDemoTest {
 //	
 	
 	
-	@AfterMethod(alwaysRun = true)
+	@AfterMethod(onlyForGroups="GSgroup")
 	public static void tearDown(ITestResult testResult) throws IOException {
 		
 //		 

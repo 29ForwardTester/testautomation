@@ -5,14 +5,9 @@
     <classes>
       <class name="executors.SauceDemoTest">
         <methods>
-          <include name="loginTest3"/>
-          <include name="loginTest2"/>
+          <include name="test8"/>
           <include name="setUp"/>
-          <include name="loginTest7"/>
           <include name="tearDown"/>
-          <include name="loginTest6"/>
-          <include name="loginTest5"/>
-          <include name="loginTest4"/>
         </methods>
       </class> <!-- executors.SauceDemoTest -->
     </classes>
