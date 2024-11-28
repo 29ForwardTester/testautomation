@@ -25,6 +25,16 @@
     <artifactId>commons-io</artifactId>
     <version>2.11.0</version> <!-- Use the latest version available -->
 </dependency>
+ <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.2.3</version> <!-- Use the latest stable version -->
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.3</version> <!-- For Excel files in .xlsx format -->
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

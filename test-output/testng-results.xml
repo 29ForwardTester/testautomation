@@ -2,68 +2,68 @@
 <testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-27T10:47:42 MEZ" name="Default suite" finished-at="2024-11-27T10:48:17 MEZ" duration-ms="34700">
+  <suite started-at="2024-11-28T16:33:26 MEZ" name="Default suite" finished-at="2024-11-28T16:33:59 MEZ" duration-ms="33618">
     <groups>
       <group name="GSgroup">
-        <method signature="SauceDemoTest._Test1()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test1" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest._Test2()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test2" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test4" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest._Test5()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test5" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest._Test6()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test6" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest._Test7()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test7" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest._Test8()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test8" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest._Test9()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test9" class="executors.SauceDemoTest"/>
-        <method signature="SauceDemoTest.test10()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="test10" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test1()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test1" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test2()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test2" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test4" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test5()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test5" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test6()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test6" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test7()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test7" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test8()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test8" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test9()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test9" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest.test10()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="test10" class="executors.SauceDemoTest"/>
       </group> <!-- GSgroup -->
       <group name="ISgroup">
-        <method signature="SauceDemoTest._Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" name="_Test3" class="executors.SauceDemoTest"/>
+        <method signature="SauceDemoTest._Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" name="_Test3" class="executors.SauceDemoTest"/>
       </group> <!-- ISgroup -->
     </groups>
-    <test started-at="2024-11-27T10:47:42 MEZ" name="Default test" finished-at="2024-11-27T10:48:17 MEZ" duration-ms="34700">
+    <test started-at="2024-11-28T16:33:26 MEZ" name="Default test" finished-at="2024-11-28T16:33:59 MEZ" duration-ms="33618">
       <class name="executors.SauceDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:42 MEZ" name="setUp" finished-at="2024-11-27T10:47:44 MEZ" duration-ms="1924" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:26 MEZ" name="setUp" finished-at="2024-11-28T16:33:28 MEZ" duration-ms="2129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test1()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:44 MEZ" name="_Test1" finished-at="2024-11-27T10:47:45 MEZ" duration-ms="674" status="PASS">
+        <test-method signature="_Test1()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:28 MEZ" name="_Test1" finished-at="2024-11-28T16:33:29 MEZ" duration-ms="1424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test1 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:45 MEZ" name="tearDown" finished-at="2024-11-27T10:47:45 MEZ" duration-ms="708" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:29 MEZ" name="tearDown" finished-at="2024-11-28T16:33:30 MEZ" duration-ms="866" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test1 status=SUCCESS method=SauceDemoTest._Test1()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test1 status=SUCCESS method=SauceDemoTest._Test1()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:45 MEZ" name="setUp" finished-at="2024-11-27T10:47:45 MEZ" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:30 MEZ" name="setUp" finished-at="2024-11-28T16:33:31 MEZ" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test2()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:45 MEZ" name="_Test2" finished-at="2024-11-27T10:47:46 MEZ" duration-ms="362" status="PASS">
+        <test-method signature="_Test2()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:31 MEZ" name="_Test2" finished-at="2024-11-28T16:33:31 MEZ" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test2 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:46 MEZ" name="tearDown" finished-at="2024-11-27T10:47:46 MEZ" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:31 MEZ" name="tearDown" finished-at="2024-11-28T16:33:31 MEZ" duration-ms="161" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test2 status=SUCCESS method=SauceDemoTest._Test2()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test2 status=SUCCESS method=SauceDemoTest._Test2()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:46 MEZ" name="setUp" finished-at="2024-11-27T10:47:46 MEZ" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:31 MEZ" name="setUp" finished-at="2024-11-28T16:33:31 MEZ" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:46 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-27T10:47:47 MEZ" duration-ms="1347" status="PASS">
+        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:31 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-28T16:33:33 MEZ" duration-ms="1356" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,11 +79,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:47 MEZ" name="setUp" finished-at="2024-11-27T10:47:48 MEZ" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:33 MEZ" name="setUp" finished-at="2024-11-28T16:33:33 MEZ" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:48 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-27T10:47:48 MEZ" duration-ms="493" status="PASS">
+        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:33 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-28T16:33:33 MEZ" duration-ms="445" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,11 +99,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:48 MEZ" name="setUp" finished-at="2024-11-27T10:47:48 MEZ" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:33 MEZ" name="setUp" finished-at="2024-11-28T16:33:33 MEZ" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:48 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-27T10:47:49 MEZ" duration-ms="1288" status="PASS">
+        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:33 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-28T16:33:35 MEZ" duration-ms="1383" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,11 +119,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:49 MEZ" name="setUp" finished-at="2024-11-27T10:47:50 MEZ" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:35 MEZ" name="setUp" finished-at="2024-11-28T16:33:35 MEZ" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:50 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-27T10:47:51 MEZ" duration-ms="1275" status="PASS">
+        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:35 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-28T16:33:36 MEZ" duration-ms="1495" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,11 +139,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:51 MEZ" name="setUp" finished-at="2024-11-27T10:47:51 MEZ" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:36 MEZ" name="setUp" finished-at="2024-11-28T16:33:37 MEZ" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:51 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-27T10:47:57 MEZ" duration-ms="6341" status="PASS">
+        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:37 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-28T16:33:43 MEZ" duration-ms="6430" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,11 +159,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:57 MEZ" name="setUp" finished-at="2024-11-27T10:47:57 MEZ" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:43 MEZ" name="setUp" finished-at="2024-11-28T16:33:43 MEZ" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:57 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-27T10:47:58 MEZ" duration-ms="414" status="PASS">
+        <test-method signature="_Test3(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:43 MEZ" name="_Test3" data-provider="credentials" finished-at="2024-11-28T16:33:44 MEZ" duration-ms="557" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,11 +179,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:58 MEZ" name="setUp" finished-at="2024-11-27T10:47:58 MEZ" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:44 MEZ" name="setUp" finished-at="2024-11-28T16:33:44 MEZ" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:58 MEZ" name="_Test4" data-provider="myData" finished-at="2024-11-27T10:47:58 MEZ" duration-ms="410" status="PASS">
+        <test-method signature="_Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:44 MEZ" name="_Test4" data-provider="myData" finished-at="2024-11-28T16:33:44 MEZ" duration-ms="568" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,22 +199,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test4 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:58 MEZ" name="tearDown" finished-at="2024-11-27T10:47:58 MEZ" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:44 MEZ" name="tearDown" finished-at="2024-11-28T16:33:45 MEZ" duration-ms="188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test4 status=SUCCESS method=SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test4 status=SUCCESS method=SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:58 MEZ" name="setUp" finished-at="2024-11-27T10:47:59 MEZ" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:45 MEZ" name="setUp" finished-at="2024-11-28T16:33:45 MEZ" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:59 MEZ" name="_Test4" data-provider="myData" finished-at="2024-11-27T10:47:59 MEZ" duration-ms="392" status="PASS">
+        <test-method signature="_Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:45 MEZ" name="_Test4" data-provider="myData" finished-at="2024-11-28T16:33:45 MEZ" duration-ms="397" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -230,22 +230,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test4 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:59 MEZ" name="tearDown" finished-at="2024-11-27T10:47:59 MEZ" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:45 MEZ" name="tearDown" finished-at="2024-11-28T16:33:45 MEZ" duration-ms="139" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test4 status=SUCCESS method=SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test4 status=SUCCESS method=SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:59 MEZ" name="setUp" finished-at="2024-11-27T10:47:59 MEZ" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:45 MEZ" name="setUp" finished-at="2024-11-28T16:33:45 MEZ" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:47:59 MEZ" name="_Test4" data-provider="myData" finished-at="2024-11-27T10:48:00 MEZ" duration-ms="439" status="PASS">
+        <test-method signature="_Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:45 MEZ" name="_Test4" data-provider="myData" finished-at="2024-11-28T16:33:46 MEZ" duration-ms="434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,125 +261,125 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test4 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:00 MEZ" name="tearDown" finished-at="2024-11-27T10:48:00 MEZ" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:46 MEZ" name="tearDown" finished-at="2024-11-28T16:33:46 MEZ" duration-ms="159" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test4 status=SUCCESS method=SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test4 status=SUCCESS method=SauceDemoTest._Test4(java.lang.String,java.lang.String)[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:00 MEZ" name="setUp" finished-at="2024-11-27T10:48:00 MEZ" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:46 MEZ" name="setUp" finished-at="2024-11-28T16:33:46 MEZ" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test5()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:00 MEZ" name="_Test5" finished-at="2024-11-27T10:48:00 MEZ" duration-ms="471" status="PASS">
+        <test-method signature="_Test5()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:46 MEZ" name="_Test5" finished-at="2024-11-28T16:33:46 MEZ" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test5 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:00 MEZ" name="tearDown" finished-at="2024-11-27T10:48:01 MEZ" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:46 MEZ" name="tearDown" finished-at="2024-11-28T16:33:47 MEZ" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test5 status=SUCCESS method=SauceDemoTest._Test5()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test5 status=SUCCESS method=SauceDemoTest._Test5()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:01 MEZ" name="setUp" finished-at="2024-11-27T10:48:01 MEZ" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:47 MEZ" name="setUp" finished-at="2024-11-28T16:33:47 MEZ" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test6()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:01 MEZ" name="_Test6" finished-at="2024-11-27T10:48:04 MEZ" duration-ms="3355" status="PASS">
+        <test-method signature="_Test6()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:47 MEZ" name="_Test6" finished-at="2024-11-28T16:33:50 MEZ" duration-ms="3237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test6 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:04 MEZ" name="tearDown" finished-at="2024-11-27T10:48:04 MEZ" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:50 MEZ" name="tearDown" finished-at="2024-11-28T16:33:50 MEZ" duration-ms="229" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test6 status=SUCCESS method=SauceDemoTest._Test6()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test6 status=SUCCESS method=SauceDemoTest._Test6()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:04 MEZ" name="setUp" finished-at="2024-11-27T10:48:04 MEZ" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:50 MEZ" name="setUp" finished-at="2024-11-28T16:33:50 MEZ" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test7()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:04 MEZ" name="_Test7" finished-at="2024-11-27T10:48:10 MEZ" duration-ms="5672" status="PASS">
+        <test-method signature="_Test7()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:50 MEZ" name="_Test7" finished-at="2024-11-28T16:33:54 MEZ" duration-ms="3917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test7 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:10 MEZ" name="tearDown" finished-at="2024-11-27T10:48:10 MEZ" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:54 MEZ" name="tearDown" finished-at="2024-11-28T16:33:55 MEZ" duration-ms="234" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test7 status=SUCCESS method=SauceDemoTest._Test7()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test7 status=SUCCESS method=SauceDemoTest._Test7()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:10 MEZ" name="setUp" finished-at="2024-11-27T10:48:11 MEZ" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:55 MEZ" name="setUp" finished-at="2024-11-28T16:33:55 MEZ" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test8()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:11 MEZ" name="_Test8" finished-at="2024-11-27T10:48:12 MEZ" duration-ms="1878" status="PASS">
+        <test-method signature="_Test8()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:55 MEZ" name="_Test8" finished-at="2024-11-28T16:33:56 MEZ" duration-ms="1230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test8 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:12 MEZ" name="tearDown" finished-at="2024-11-27T10:48:13 MEZ" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:56 MEZ" name="tearDown" finished-at="2024-11-28T16:33:56 MEZ" duration-ms="194" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test8 status=SUCCESS method=SauceDemoTest._Test8()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test8 status=SUCCESS method=SauceDemoTest._Test8()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:13 MEZ" name="setUp" finished-at="2024-11-27T10:48:13 MEZ" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:56 MEZ" name="setUp" finished-at="2024-11-28T16:33:56 MEZ" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test9()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:13 MEZ" name="_Test9" finished-at="2024-11-27T10:48:14 MEZ" duration-ms="1104" status="PASS">
+        <test-method signature="_Test9()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:56 MEZ" name="_Test9" finished-at="2024-11-28T16:33:57 MEZ" duration-ms="885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test9 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:14 MEZ" name="tearDown" finished-at="2024-11-27T10:48:14 MEZ" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:57 MEZ" name="tearDown" finished-at="2024-11-28T16:33:57 MEZ" duration-ms="184" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test9 status=SUCCESS method=SauceDemoTest._Test9()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=_Test9 status=SUCCESS method=SauceDemoTest._Test9()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:14 MEZ" name="setUp" finished-at="2024-11-27T10:48:14 MEZ" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:57 MEZ" name="setUp" finished-at="2024-11-28T16:33:57 MEZ" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test10()[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:14 MEZ" name="test10" finished-at="2024-11-27T10:48:16 MEZ" duration-ms="2182" status="PASS">
+        <test-method signature="test10()[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:57 MEZ" name="test10" finished-at="2024-11-28T16:33:59 MEZ" duration-ms="1907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test10 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@c65a5ef]" started-at="2024-11-27T10:48:16 MEZ" name="tearDown" finished-at="2024-11-27T10:48:17 MEZ" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.SauceDemoTest@4fd4cae3]" started-at="2024-11-28T16:33:59 MEZ" name="tearDown" finished-at="2024-11-28T16:33:59 MEZ" duration-ms="150" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test10 status=SUCCESS method=SauceDemoTest.test10()[pri:0, instance:executors.SauceDemoTest@c65a5ef] output={null}]]]>
+                <![CDATA[[TestResult name=test10 status=SUCCESS method=SauceDemoTest.test10()[pri:0, instance:executors.SauceDemoTest@4fd4cae3] output={null}]]]>
               </value>
             </param>
           </params>
