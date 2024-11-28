@@ -6,11 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
+
 public class CurrentConstants {
 	
 	public String cURL ;
 	
 	public WebDriver cd ;
+	public static final String path = "C:\\Users\\User29F\\Desktop\\testData\\";
+	public static final String fileName = "mydata.xls";
+	public static final String sheet ="Sheet1";
 	
 	
 	public CurrentConstants(String wd) {

@@ -5,9 +5,9 @@
     <classes>
       <class name="executors.SauceDemoTest">
         <methods>
-          <include name="test8"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="_Test6"/>
         </methods>
       </class> <!-- executors.SauceDemoTest -->
     </classes>

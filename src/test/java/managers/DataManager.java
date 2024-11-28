@@ -8,40 +8,64 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.testng.annotations.DataProvider;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
 
 public class DataManager {
 	
-	public  HSSFWorkbook workbook;
-	public  HSSFSheet worksheet;
+	public  static HSSFWorkbook workbook;
+	public  static HSSFSheet worksheet;
 	public  HSSFCell cell;
 	
 
-	public  String path ="\"C:\\Users\\User29F\\Desktop\\testData\\mydata.xls\"";
-	public  String sheetname ="Sheet1";
+//	public  static String path ="C:\\Users\\User29F\\Desktop\\testData\\mydata.xls";
+//	public  static String sheetname ="Sheet1";
 	
-	public  void setDataFile() throws Exception { //access the data
+	public  static void setDataFile(String npath, String nsheet) throws Exception { //access the data
 		
 		try {
-			FileInputStream excelFile = new FileInputStream(path); //open the excel file
-			
-			//initialize the file readers
+			FileInputStream excelFile = new FileInputStream(npath); //open the excel file
+			//load the data into workbooks
 			workbook = new HSSFWorkbook(excelFile);
-			worksheet = workbook.getSheet(sheetname);
-			
-			cell = worksheet.getRow(1).getCell(1);
-			
-			
+			worksheet = workbook.getSheet(nsheet);
+			//cell = worksheet.getRow(0).getCell(0);
+//			String valueOfCell = cell.getStringCellValue();
+//			System.out.println(valueOfCell);
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
-		
-		
 	}
 	
-	public  String[][] getTestData(String dataName) {
+	public  static HSSFCell[] findCells(String tableName ) {
+		
+		String pos = "begin";
+		HSSFCell[] cells = new HSSFCell[2];
+		
+		try {
+		for (Row row : worksheet) {
+			for (Cell cell : row) {
+				if (tableName.equals(cell.getStringCellValue())){
+					if(pos.equalsIgnoreCase("begin")) {
+						cells[0] = (HSSFCell) cell;
+						pos ="end";
+					} else {
+						cells[1] = (HSSFCell) cell;
+					}
+						
+				}
+				
+			}
+		}
+		} catch (Exception e2) {
+			System.out.println(e2.getMessage());
+		}
+		return cells;
+	}
+
+	
+	public  static String[][] getTestData(String dataName) {
 		
 		String[][] testData = null;
 		
@@ -69,40 +93,17 @@ public class DataManager {
 			System.out.println(ex.getMessage());
 		}
 		
-		return testData;
-	}
-	
-	public  HSSFCell[] findCells(String tableName ) {
-			
-			String pos = "begin";
-			HSSFCell[] cells = new HSSFCell[2];
-			
-			try {
-			for (Row row : worksheet) {
-				for (Cell cell : row) {
-					if (tableName.equals(cell.getStringCellValue())){
-						if(pos.equalsIgnoreCase("begin")) {
-							cells[0] = (HSSFCell) cell;
-							pos ="end";
-						} else {
-							cells[1] = (HSSFCell) cell;
-						}
-							
-					}
-					
-				}
-			}
-			} catch (Exception e2) {
-				System.out.println(e2.getMessage());
-			}
-			return cells;
+		return  testData;
 	}
 	
 
 	@DataProvider(name="mydata")
-	public  String[][]dataProvider(String thedataname){
-		return (String[][]) getTestData(thedataname);
+	public  String[][]testDataProvider(String dataname){
+			return  getTestData(dataname);
+		
+		
 	}
+	
 	
 	
 	
