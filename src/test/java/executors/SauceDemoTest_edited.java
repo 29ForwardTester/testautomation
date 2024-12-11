@@ -36,7 +36,7 @@ import com.aventstack.extentreports.Status;
 //the test results will not show failure on the console or on the testNG Interface anymore, since the run is clotured in try-catch blocks,
 //that will report the failures to the extentreporter, and ignore displaying it on the console output
 //so dont flip out if you dont get a test failure on the console or testNG-output. Consider only extentreports
-public class SauceDemoTest {
+public class SauceDemoTest_edited {
 	
 	// P:positive, N:negative, F:functionality (is differenciated to tech and logic), NF:non-functional, T:technical, L:logic
 	//about saucedemo:
@@ -88,11 +88,7 @@ public class SauceDemoTest {
 			} else {
 				test1.fail("login information incorrect");
 			}
-				
-//			current.cd.findElement(By.id("user-name")).sendKeys("standard_user");
-//			current.cd.findElement(By.id("password")).sendKeys("secret_sauce");
-//			current.cd.findElement(By.id("login-button")).click();
-			
+
 		}
 		catch (Exception e) {
 			test1.fail("login information incorrect"); //catch the test code execution failure
@@ -105,9 +101,7 @@ public class SauceDemoTest {
 //		else if(!current.cd.findElement(By.xpath("//a[@data-test=\"shopping-cart-lnk\"]")).isDisplayed()) {
 //			test1.fail("test failed");
 //		}
-			
 		
-			
 	}
 	@Test(groups="GSgroup")
 	public  void _Test2() {

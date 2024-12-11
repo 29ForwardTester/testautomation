@@ -18,7 +18,7 @@ import javax.swing.plaf.basic.BasicBorders;
 
 import executors.MainPage;
 
-public class GUI extends JFrame implements ActionListener{
+public class GUI_initialAttempt extends JFrame implements ActionListener{
 	
 	
 	JButton sendURLbutton;
@@ -26,7 +26,7 @@ public class GUI extends JFrame implements ActionListener{
 	JCheckBox mozillaCheckBox;
 	JTextField urlText;
 		
-	public GUI() {
+	public GUI_initialAttempt() {
 		setTitle("Test Interface");
 		setSize(1000,1000);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -104,7 +104,7 @@ public class GUI extends JFrame implements ActionListener{
 		
 		public static void main(String[] args) {
 			
-			new GUI();
+			new GUI_initialAttempt();
 			
 		}
 
