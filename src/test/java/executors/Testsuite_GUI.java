@@ -186,7 +186,7 @@ public class Testsuite_GUI extends JFrame implements ActionListener, ITestResult
 					
 						sauceTest._Test1();
 						
-						sauceTest.tearDown(ITestResult tResult1);
+						
 					}
 					if(test2checkbox.isSelected()) {
 						sauceTest.setUp();
@@ -254,12 +254,12 @@ public class Testsuite_GUI extends JFrame implements ActionListener, ITestResult
 			}
 			
 		}
-		
-		public static void main(String[] args) {
-			
-			new Testsuite_GUI();
-			
-		}
+//		
+//		public static void main(String[] args) {
+//			
+//			new Testsuite_GUI();
+//			
+//		}
 		@Override
 		public ITestNGMethod getMethod() {
 			// TODO Auto-generated method stub
