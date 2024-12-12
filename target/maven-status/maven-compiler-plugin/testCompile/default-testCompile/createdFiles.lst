@@ -1,0 +1,15 @@
+managers\ScreenShotsManager.class
+constants\CurrentConstants.class
+executors\MainPage.class
+managers\DataManager.class
+managers\ReportManagerGUI.class
+managers\ReportManager.class
+executors\VerivoxCreditRequestTest.class
+managers\ReportManagerPerf.class
+executors\GUI_initialAttempt.class
+executors\SauceDemoTest.class
+constants\CredentialsDataProvider.class
+executors\SauceDemoTest_edited.class
+executors\Testsuite_GUI.class
+managers\FunctionsManager.class
+executors\PerformanceTest.class

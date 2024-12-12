@@ -254,12 +254,12 @@ public class Testsuite_GUI extends JFrame implements ActionListener, ITestResult
 			}
 			
 		}
-//		
-//		public static void main(String[] args) {
-//			
-//			new Testsuite_GUI();
-//			
-//		}
+		
+		public static void main(String[] args) {
+			
+			new Testsuite_GUI();
+			
+		}
 		@Override
 		public ITestNGMethod getMethod() {
 			// TODO Auto-generated method stub
