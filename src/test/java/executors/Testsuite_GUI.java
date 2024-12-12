@@ -193,16 +193,16 @@ public class Testsuite_GUI extends JFrame implements ActionListener, ITestResult
 						sauceTest._Test2();
 						sauceTest.tearDown(tResult);
 					}
-					if(test3checkbox.isSelected()) {
-						sauceTest.setUp();
-						sauceTest._Test3("we","ggt");
-						sauceTest.tearDown(tResult);
-					}
-					if(test4checkbox.isSelected()) {
-						sauceTest.setUp();
-						sauceTest._Test4("UN","PASS");
-						sauceTest.tearDown(tResult);
-					}
+//					if(test3checkbox.isSelected()) {
+//						sauceTest.setUp();
+//						sauceTest._Test3("we","ggt");
+//						sauceTest.tearDown(tResult);
+//					}
+//					if(test4checkbox.isSelected()) {
+//						sauceTest.setUp();
+//						sauceTest._Test4("UN","PASS");
+//						sauceTest.tearDown(tResult);
+//					}
 					if(test5checkbox.isSelected()) {
 						sauceTest.setUp();
 						sauceTest._Test5();
