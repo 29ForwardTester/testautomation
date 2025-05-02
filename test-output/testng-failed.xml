@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="executors.SauceDemoTest">
+      <class name="executors.DemoInsuranceAppTestsuite1">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="_Test6"/>
+          <include name="setUp"/>
+          <include name="_Test3"/>
+          <include name="_Test2"/>
         </methods>
-      </class> <!-- executors.SauceDemoTest -->
+      </class> <!-- executors.DemoInsuranceAppTestsuite1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

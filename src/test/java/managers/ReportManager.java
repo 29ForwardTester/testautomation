@@ -14,9 +14,9 @@ public class ReportManager {
 	
 	public static ExtentReports reportGenerator() {
 		if(report == null) {
-			ExtentSparkReporter sparker = new ExtentSparkReporter("C://Users//ET/selenium//reports//sauce.html");
-			sparker.config().setDocumentTitle("sauceLabsTest");
-			sparker.config().setReportName("Test Report: sauceLabs.com");
+			ExtentSparkReporter sparker = new ExtentSparkReporter("C://Users//ET/selenium//reports//insuranceDemoApp.html");
+			sparker.config().setDocumentTitle("InsuranceDemoApp");
+			sparker.config().setReportName("Test Report: Demo Insurance App");
 			sparker.config().setTheme(Theme.STANDARD);
 			
 			report = new ExtentReports();
