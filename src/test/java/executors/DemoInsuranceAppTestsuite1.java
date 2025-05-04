@@ -81,7 +81,7 @@ public class DemoInsuranceAppTestsuite1 {
 			test2.fail("login information incorrect"); //catch code execution failure
 		}
 		String screenpath = ScreenShotsManager.takeScreenshot(constantsObj.cd, "Test 2");//generate a screenpath
-		test.addScreenCaptureFromPath(screenpath);
+		test2.addScreenCaptureFromPath(screenpath);
 	}
 	
 	@Test
@@ -129,7 +129,7 @@ public class DemoInsuranceAppTestsuite1 {
 			test3.fail("hinzugügen vom Kunde: "+ vornameK +" "+ nachnameK +"fehlgeschlagen"); //catch code execution failure
 		}
 		String screenpath = ScreenShotsManager.takeScreenshot(constantsObj.cd, "Test 3");//generate a screenpath
-		test.addScreenCaptureFromPath(screenpath);
+		test3.addScreenCaptureFromPath(screenpath);
 		
 	}
 	
