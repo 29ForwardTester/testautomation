@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-04T14:25:47 MESZ" name="Default suite" finished-at="2025-05-04T14:25:58 MESZ" duration-ms="10236">
+  <suite started-at="2025-05-07T10:46:12 MESZ" name="Default suite" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="10711">
     <groups>
     </groups>
-    <test started-at="2025-05-04T14:25:47 MESZ" name="Default test" finished-at="2025-05-04T14:25:58 MESZ" duration-ms="10236">
+    <test started-at="2025-05-07T10:46:12 MESZ" name="Default test" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="10711">
       <class name="executors.DemoInsuranceAppTestsuite1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:47 MESZ" name="setUp" finished-at="2025-05-04T14:25:48 MESZ" duration-ms="692" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:12 MESZ" name="setUp" finished-at="2025-05-07T10:46:13 MESZ" duration-ms="748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test1()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:48 MESZ" name="_Test1" finished-at="2025-05-04T14:25:50 MESZ" duration-ms="1662" status="PASS">
+        <test-method signature="_Test1()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:13 MESZ" name="_Test1" finished-at="2025-05-07T10:46:15 MESZ" duration-ms="1707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test1 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:50 MESZ" name="tearDown" finished-at="2025-05-04T14:25:50 MESZ" duration-ms="550" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:15 MESZ" name="tearDown" finished-at="2025-05-07T10:46:16 MESZ" duration-ms="609" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,114 +26,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:50 MESZ" name="setUp" finished-at="2025-05-04T14:25:50 MESZ" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:16 MESZ" name="setUp" finished-at="2025-05-07T10:46:16 MESZ" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:50 MESZ" name="_Test2" finished-at="2025-05-04T14:25:52 MESZ" duration-ms="1505" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(String)" because "executors.DemoInsuranceAppTestsuite1.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(String)" because "executors.DemoInsuranceAppTestsuite1.test" is null
-at executors.DemoInsuranceAppTestsuite1._Test2(DemoInsuranceAppTestsuite1.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="_Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:16 MESZ" name="_Test2" finished-at="2025-05-07T10:46:17 MESZ" duration-ms="1533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test2 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:52 MESZ" name="tearDown" finished-at="2025-05-04T14:25:52 MESZ" duration-ms="55" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:17 MESZ" name="tearDown" finished-at="2025-05-07T10:46:17 MESZ" duration-ms="43" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test2 status=FAILURE method=DemoInsuranceAppTestsuite1._Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b] output={null}]]]>
+                <![CDATA[[TestResult name=_Test2 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:52 MESZ" name="setUp" finished-at="2025-05-04T14:25:52 MESZ" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:17 MESZ" name="setUp" finished-at="2025-05-07T10:46:17 MESZ" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:52 MESZ" name="_Test3" finished-at="2025-05-04T14:25:57 MESZ" duration-ms="5487" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(String)" because "executors.DemoInsuranceAppTestsuite1.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(String)" because "executors.DemoInsuranceAppTestsuite1.test" is null
-at executors.DemoInsuranceAppTestsuite1._Test3(DemoInsuranceAppTestsuite1.java:132)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="_Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:17 MESZ" name="_Test3" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="5714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-04T14:25:57 MESZ" name="tearDown" finished-at="2025-05-04T14:25:58 MESZ" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:23 MESZ" name="tearDown" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="73" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test3 status=FAILURE method=DemoInsuranceAppTestsuite1._Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b] output={null}]]]>
+                <![CDATA[[TestResult name=_Test3 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b] output={null}]]]>
               </value>
             </param>
           </params>

@@ -37,6 +37,7 @@ public class DemoInsuranceAppTestsuite1 {
 		//data file (in .xls format) must match the given structure already established in the current file in order to be correctly read!!!)
 		constantsObj.cd.manage().window().maximize();
 		constantsObj.cd.get(constantsObj.cURL);
+		//database initial state must be saved
 	}
 	@Test
 	public void _Test1() throws IOException {
