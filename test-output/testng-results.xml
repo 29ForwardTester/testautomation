@@ -1,69 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T10:46:12 MESZ" name="Default suite" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="10711">
+  <suite started-at="2025-05-20T17:19:18 MESZ" name="Default suite" finished-at="2025-05-20T17:19:51 MESZ" duration-ms="32737">
     <groups>
     </groups>
-    <test started-at="2025-05-07T10:46:12 MESZ" name="Default test" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="10711">
+    <test started-at="2025-05-20T17:19:18 MESZ" name="Default test" finished-at="2025-05-20T17:19:51 MESZ" duration-ms="32737">
       <class name="executors.DemoInsuranceAppTestsuite1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:12 MESZ" name="setUp" finished-at="2025-05-07T10:46:13 MESZ" duration-ms="748" status="PASS">
+        <test-method is-config="true" signature="db_bckup()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:18 MESZ" name="db_bckup" finished-at="2025-05-20T17:19:18 MESZ" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- db_bckup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:18 MESZ" name="setUp" finished-at="2025-05-20T17:19:19 MESZ" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test1()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:13 MESZ" name="_Test1" finished-at="2025-05-07T10:46:15 MESZ" duration-ms="1707" status="PASS">
+        <test-method signature="_Test1()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:19 MESZ" name="_Test1" finished-at="2025-05-20T17:19:20 MESZ" duration-ms="1399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test1 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:15 MESZ" name="tearDown" finished-at="2025-05-07T10:46:16 MESZ" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:20 MESZ" name="tearDown" finished-at="2025-05-20T17:19:21 MESZ" duration-ms="664" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test1 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test1()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b] output={null}]]]>
+                <![CDATA[[TestResult name=_Test1 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test1()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:16 MESZ" name="setUp" finished-at="2025-05-07T10:46:16 MESZ" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:21 MESZ" name="setUp" finished-at="2025-05-20T17:19:21 MESZ" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:16 MESZ" name="_Test2" finished-at="2025-05-07T10:46:17 MESZ" duration-ms="1533" status="PASS">
+        <test-method signature="_Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:21 MESZ" name="_Test2" finished-at="2025-05-20T17:19:22 MESZ" duration-ms="1306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test2 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:17 MESZ" name="tearDown" finished-at="2025-05-07T10:46:17 MESZ" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:22 MESZ" name="tearDown" finished-at="2025-05-20T17:19:22 MESZ" duration-ms="43" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test2 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b] output={null}]]]>
+                <![CDATA[[TestResult name=_Test2 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test2()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:17 MESZ" name="setUp" finished-at="2025-05-07T10:46:17 MESZ" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:22 MESZ" name="setUp" finished-at="2025-05-20T17:19:22 MESZ" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="_Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:17 MESZ" name="_Test3" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="5714" status="PASS">
+        <test-method signature="_Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:22 MESZ" name="_Test3" finished-at="2025-05-20T17:19:26 MESZ" duration-ms="4231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _Test3 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b]" started-at="2025-05-07T10:46:23 MESZ" name="tearDown" finished-at="2025-05-07T10:46:23 MESZ" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:27 MESZ" name="tearDown" finished-at="2025-05-20T17:19:27 MESZ" duration-ms="51" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=_Test3 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@29cfd92b] output={null}]]]>
+                <![CDATA[[TestResult name=_Test3 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test3()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:27 MESZ" name="setUp" finished-at="2025-05-20T17:19:27 MESZ" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="_Test4()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:27 MESZ" name="_Test4" finished-at="2025-05-20T17:19:32 MESZ" duration-ms="5725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _Test4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:32 MESZ" name="tearDown" finished-at="2025-05-20T17:19:32 MESZ" duration-ms="59" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=_Test4 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test4()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:32 MESZ" name="setUp" finished-at="2025-05-20T17:19:33 MESZ" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="_Test5()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:33 MESZ" name="_Test5" finished-at="2025-05-20T17:19:38 MESZ" duration-ms="5817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _Test5 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:38 MESZ" name="tearDown" finished-at="2025-05-20T17:19:38 MESZ" duration-ms="118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=_Test5 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test5()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:38 MESZ" name="setUp" finished-at="2025-05-20T17:19:39 MESZ" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="_Test6()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:39 MESZ" name="_Test6" finished-at="2025-05-20T17:19:43 MESZ" duration-ms="4785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _Test6 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:43 MESZ" name="tearDown" finished-at="2025-05-20T17:19:43 MESZ" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=_Test6 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test6()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:43 MESZ" name="setUp" finished-at="2025-05-20T17:19:44 MESZ" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="_Test7()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:44 MESZ" name="_Test7" finished-at="2025-05-20T17:19:48 MESZ" duration-ms="3864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _Test7 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:48 MESZ" name="tearDown" finished-at="2025-05-20T17:19:48 MESZ" duration-ms="40" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=_Test7 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test7()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:48 MESZ" name="setUp" finished-at="2025-05-20T17:19:48 MESZ" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="_Test8()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:48 MESZ" name="_Test8" finished-at="2025-05-20T17:19:51 MESZ" duration-ms="2970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _Test8 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:51 MESZ" name="tearDown" finished-at="2025-05-20T17:19:51 MESZ" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=_Test8 status=SUCCESS method=DemoInsuranceAppTestsuite1._Test8()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="db_restore()[pri:0, instance:executors.DemoInsuranceAppTestsuite1@4a9cc6cb]" started-at="2025-05-20T17:19:51 MESZ" name="db_restore" finished-at="2025-05-20T17:19:53 MESZ" duration-ms="2488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- db_restore -->
       </class> <!-- executors.DemoInsuranceAppTestsuite1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
